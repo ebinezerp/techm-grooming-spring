@@ -1,6 +1,7 @@
 package grooming.springdemo;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -16,12 +17,13 @@ public class App {
 		 * BeanFactory beanFactory = new XmlBeanFactory(new
 		 * ClassPathResource("spring.xml"));
 		 */
-		
-		
-		ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
-		
-		
-		
+
+		/*
+		 * ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
+		 */
+
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
 		/* Employee emp1 = (Employee) beanFactory.getBean("employee1"); */
 		/* Employee emp1 = beanFactory.getBean(Employee.class); */
 		Employee emp1 = context.getBean("emp", Employee.class);
