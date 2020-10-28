@@ -19,7 +19,6 @@ public class Employee {
 	 */
 
 	private Vehicle vehicle;
-	private int age;
 
 	public Employee() {
 	}
@@ -38,14 +37,6 @@ public class Employee {
 
 	public void setVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
 	}
 
 }
