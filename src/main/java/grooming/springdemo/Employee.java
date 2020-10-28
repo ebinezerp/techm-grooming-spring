@@ -1,5 +1,10 @@
 package grooming.springdemo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("emp")
 public class Employee {
 
 	/*
@@ -18,6 +23,8 @@ public class Employee {
 	 * public void travels() { train.transport(); }
 	 */
 
+	@Autowired
+	@Qualifier("car")
 	private Vehicle vehicle;
 
 	public Employee() {

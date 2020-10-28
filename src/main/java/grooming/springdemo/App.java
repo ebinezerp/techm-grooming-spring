@@ -24,7 +24,7 @@ public class App {
 		
 		/* Employee emp1 = (Employee) beanFactory.getBean("employee1"); */
 		/* Employee emp1 = beanFactory.getBean(Employee.class); */
-		Employee emp1 = context.getBean("employee", Employee.class);
+		Employee emp1 = context.getBean("emp", Employee.class);
 		emp1.travels();
 		/*
 		 * Employee emp2 = (Employee) context.getBean("employee2"); emp2.travels();

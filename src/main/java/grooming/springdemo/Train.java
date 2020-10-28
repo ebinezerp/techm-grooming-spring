@@ -1,5 +1,8 @@
 package grooming.springdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component("train")
 public class Train implements Vehicle{
 	
 	public void transport() {
